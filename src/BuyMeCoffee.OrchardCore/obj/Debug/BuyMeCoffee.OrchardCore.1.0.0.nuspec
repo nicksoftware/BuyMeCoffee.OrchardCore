@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BuyMeCoffee.OrchardCore</id>
+    <version>1.0.0</version>
+    <authors>Nicolas Maluleke</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Buy me coffee widget for orchardCore</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="OrchardCore.Admin" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.ContentManagement" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.ContentTypes.Abstractions" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.DisplayManagement" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.Module.Targets" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.Navigation" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+        <dependency id="OrchardCore.ResourceManagement" version="1.0.0-rc2-13450" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\nicol\source\repos\BuyMeCoffee\src\BuyMeCoffee.OrchardCore\bin\Debug\netcoreapp3.1\BuyMeCoffee.OrchardCore.Views.dll" target="lib\netcoreapp3.1\BuyMeCoffee.OrchardCore.Views.dll" />
+    <file src="C:\Users\nicol\source\repos\BuyMeCoffee\src\BuyMeCoffee.OrchardCore\bin\Debug\netcoreapp3.1\BuyMeCoffee.OrchardCore.dll" target="lib\netcoreapp3.1\BuyMeCoffee.OrchardCore.dll" />
+    <file src="C:\Users\nicol\.nuget\packages\orchardcore.module.targets\1.0.0-rc2-13450\build\netcoreapp3.1\Package.Build.props" target="build\netcoreapp3.1\BuyMeCoffee.OrchardCore.props" />
+  </files>
+</package>

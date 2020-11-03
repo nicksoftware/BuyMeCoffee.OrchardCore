@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Title>BuyMeCoffee.OrchardCore</Title>
+    <Description>The Buy me coffee module is a OrchrdCore plugin 
+    that allows you to integrate the buy me cofee plugin within your application</Description>
+    <Authors>Nicolas Maluleke</Authors>
+    <Company>NickSoftware</Company>
+    <Language>C#</Language>
+    <Summary>The Buy me coffee for Orchard Core</Summary>
+    <PackageProjectUrl>https://github.com/hnicolus/BuyMeCoffee.OrchardCore</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/hnicolus/BuyMeCoffee.OrchardCore</RepositoryUrl>
+    <PackageTags>Buy Me a Coffee OrchardCore, Orchard Core, Module, OrchardCore</PackageTags>
+    <PackageReleaseNotes>to enable add the package reference and then start your webiste and go to admin &gt; Configuration &gt; Settings &gt; &gt; payments &gt; Buy me Coffee and add the required configurations.</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>BuyMeCoffee.OrchardCore</RepositoryType>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="OrchardCore.Admin" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
+
+    <PackageReference Include="OrchardCore.Navigation" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+  </ItemGroup>
+
+</Project>

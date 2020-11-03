@@ -1,0 +1,81 @@
+﻿@model   BuyMeCoffeeViewModel
+
+
+<h3>Buy Me Coffee</h3> 
+<p>Learn more about Buy me a Coffee at <a class="link" href="https://www.buymeacoffee.com">https://www.buymeacoffee.com</a></p>
+<hr/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label asp-for="DataId">@T["User Id"]</label>
+            <input asp-for="DataId" class="form-control" type="text" />
+            <span asp-validation-for="DataId"></span>
+            <span class="hint">@T["the widgets Data Id or your buymecoffee id / username"]</span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label asp-for="Description">@T["Widget Description"]</label>
+            <textarea asp-for="Description" class="form-control" type="text"></textarea>
+            <span asp-validation-for="Description"></span>
+            <span class="hint">@T["e.g Support me on Buy me a coffee!"]</span>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <label asp-for="Message">@T["Message"]</label>
+            <textarea asp-for="Message" class="form-control"></textarea>
+            <span asp-validation-for="Message"></span>
+            <span class="hint">@T["e.g Thank you for visiting. You can now buy me a coffee!"]</span>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="WidgetPosition">@T["Position"]</label>
+            <select class="form-control" asp-for="WidgetPosition">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+            <span asp-validation-for="WidgetPosition"></span>
+            <span class="hint">@T["widgets position"]</span>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="form-group" asp-validation-class-for="WidgetColor">
+            <label asp-for="WidgetColor">@T["Bar text color"]</label>
+            <input asp-for="WidgetColor" class="form-control" type="color" />
+            <span asp-validation-for="WidgetColor"></span>
+            <span class="hint">@T["The widget color ."]</span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="WidgetVersion">@T["Version"]</label>
+            <select class="form-control" asp-for="WidgetVersion">
+                <option value="1.0.0">1.0.0</option>
+            </select>
+            <span asp-validation-for="WidgetVersion"></span>
+            <span class="hint">@T["widgets version"]</span>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="XMargin">@T["Widget X-axis margin"]</label>
+            <input asp-for="XMargin" class="form-control" type="number">
+            <span asp-validation-for="XMargin"></span>
+            <span class="hint">@T["Outer space of the x-axis of the widget"]</span>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="YMargin">@T["Widget Y-axis margin"]</label>
+            <input asp-for="YMargin" class="form-control" type="number">
+            <span asp-validation-for="YMargin"></span>
+            <span class="hint">@T["Outer space of the y-axis of the widget"]</span>
+        </div>
+    </div>
+</div>

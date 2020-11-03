@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\BuyMeCoffee.OrchardCore",
+    "\\src\\BuyMeCoffee.OrchardCore\\Drivers",
+    "\\src\\BuyMeCoffee.OrchardCore\\Filters",
+    "\\src\\BuyMeCoffee.OrchardCore\\Settings",
+    "\\src\\BuyMeCoffee.OrchardCore\\ViewModels",
+    "\\src\\BuyMeCoffee.OrchardCore\\Views"
+  ],
+  "SelectedNode": "\\src\\BuyMeCoffee.OrchardCore\\Filters\\BuyMeCoffeeFilter.cs",
+  "PreviewInSolutionExplorer": false
+}
